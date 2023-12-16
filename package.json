@@ -4,17 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec node --inspect=0.0.0.0:9229 --require ts-node/register index.ts",
+    "start": "node ./dist/application.js",
     "build": "tsc",
     "ts.check": "tsc --project tsconfig.json",
     "add-build": "git add dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
